@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KhadiWear | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <img src="LOGO.png" alt="Brand Logo" class="logo-img" />
+
+      <!-- Hamburger Icon (Mobile) -->
+      <!-- ✅ Inside <header> -->
+<div class="hamburger" id="hamburger">☰</div>
+
+<ul class="nav-links" id="nav-links">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#products">Products</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#cart">Cart 🛒</a></li>
+</ul>
+
+    </nav>
+  </header>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Experience the Purity of Khadi</h1>
+    <p>Redefining tradition with elegance, comfort, and sustainability.</p>
+
+    <div class="hero-feature-container">
+  <!-- Left column -->
+  <div class="hero-feature-column left">
+    <div class="feature-card float1">
+      <i class="bx bx-check-circle"></i>
+      <p>Pure & Handwoven</p>
+    </div>
+    <div class="feature-card float2">
+      <i class="bx bx-check-circle"></i>
+      <p>Eco-Friendly Threads</p>
+    </div>
+  </div>
+
+  <!-- Right column -->
+  <div class="hero-feature-column right">
+    <div class="feature-card float3">
+      <i class="bx bx-check-circle"></i>
+      <p>Made in India</p>
+    </div>
+    <div class="feature-card float1">
+      <i class="bx bx-check-circle"></i>
+      <p>Ethical & Sustainable</p>
+    </div>
+  </div>
+</div>
+
+    
+
+    <a href="#products" class="hero-button">Explore Collection</a>
+  </div>
+</section>
+
+
+  <!-- ✅ Product Section -->
+  <section id="products" class="product-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card" onclick="openModal(0)">
+        <img src="https://brownliving.in/cdn/shop/products/pistachio-mandarin-collar-khadi-shirt-verified-sustainable-products-on-brown-living-364389.jpg?v=1744708871" alt="Kurta 1" />
+        <h3>Men's Cotton Kurta</h3>
+        <p class="price">₹799</p>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card" onclick="openModal(1)">
+        <img src="https://imagescdn.jaypore.com/img/app/product/3/39608979-12499111.jpg?w=500&auto=format" alt="Kurti 1" />
+        <h3>Women's Ethnic Kurti</h3>
+        <p class="price">₹999</p>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card" onclick="openModal(2)">
+        <img src="https://www.anushreemalhotra.in/cdn/shop/files/male_197.jpg?v=1726585797" alt="Kurta 2" />
+        <h3>Classic Khadi Shirt</h3>
+        <p class="price">₹699</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ✅ Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-images"></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-price"></p>
+
+      <label for="modal-size">Size:</label>
+      <select id="modal-size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you!</p>
+
+    <div class="contact-links">
+      <a href="mailto:khadiwear@example.com" class="contact-button">
+        <i class="fas fa-envelope"></i> Email Us
+      </a>
+
+      <a href="https://wa.me/919876543210" target="_blank" class="contact-button">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+
+    <form class="feedback-form">
+      <h3>Send Us Feedback / Suggestions</h3>
+      <textarea placeholder="Write your message here..." required></textarea>
+      <input type="text" placeholder="Your Name (optional)" />
+      <input type="email" placeholder="Your Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <!-- ========== FOOTER SECTION ========== -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>KhadiWear</h3>
+    <p>Bringing tradition to your wardrobe. Made with love in India.</p>
+    <div class="footer-socials">
+      <a href="#"><i class="bx bxl-instagram"></i></a>
+      <a href="#"><i class="bx bxl-facebook"></i></a>
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+      <a href="#"><i class="bx bxl-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 KhadiWear. All rights reserved.</p>
+  </div>
+</footer>
+
+
+ <script src="script.js"></script>
+
+  
+
+</body>
+</html>
